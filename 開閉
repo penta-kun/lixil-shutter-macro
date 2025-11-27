@@ -1,0 +1,29 @@
+<macro>
+  <name>シャッター開</name>
+  <device>
+    <address>AA:BB:CC:DD:EE:FF</address> <!-- MACアドレス（nRF Connectで取得） -->
+    <service>0000fff0-0000-1000-8000-00805f9b34fb</service>　<!-- サービスUUID（例） -->
+    <characteristic>0000fff1-0000-1000-8000-00805f9b34fb</characteristic>　<!-- キャラクタリスティックUUID（例） -->
+    <value>570100</value> <!-- 開操作のValue（Note記事より） -->
+  </device>
+</macro>
+
+<macro>
+  <name>シャッター停止</name>
+  <device>
+    <address>AA:BB:CC:DD:EE:FF</address>
+    <service>0000fff0-0000-1000-8000-00805f9b34fb</service>
+    <characteristic>0000fff1-0000-1000-8000-00805f9b34fb</characteristic>
+    <value>570300</value> <!-- 停止操作のValue（Note記事より） -->
+  </device>
+</macro>
+
+<macro>
+  <name>シャッター閉</name>
+  <device>
+    <address>AA:BB:CC:DD:EE:FF</address>
+    <service>0000fff0-0000-1000-8000-00805f9b34fb</service>
+    <characteristic>0000fff1-0000-1000-8000-00805f9b34fb</characteristic>
+    <value>570200</value> <!-- 閉操作のValue（Note記事より） -->
+  </device>
+</macro>
